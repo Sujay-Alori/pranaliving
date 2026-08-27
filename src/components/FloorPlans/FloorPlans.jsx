@@ -10,6 +10,7 @@ export default function FloorPlans() {
   return (
     <section className="floor-plans" id="floor-plans">
       <div className="floor-plans__inner reveal" ref={innerRef}>
+        <span className="floor-plans__eyebrow">Plans</span>
         <h2 className="floor-plans__title">
           Space, considered<br /> from every angle.
         </h2>

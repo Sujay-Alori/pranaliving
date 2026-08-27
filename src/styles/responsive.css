@@ -1,52 +1,223 @@
 /* ==========================================================================
    PRANA Residences — Responsive Styles
-   Mobile-first breakpoints
    ========================================================================== */
 
 /* Tablet — 768px+ */
 @media (min-width: 768px) {
+  .site-header {
+    padding: 20px;
+  }
+
   .enquiry-form__row {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .concept__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .concept__item:nth-child(odd) {
+    border-right: none;
+  }
+
+  .concept__item:nth-child(3n+1) {
+    border-right: 1px solid var(--color-sand);
+  }
+
+  .concept__item:nth-child(3n+2) {
+    border-right: 1px solid var(--color-sand);
+  }
+
+  .concept__item:nth-child(n+4) {
+    border-top: 1px solid var(--color-sand);
+  }
+
+  .projects-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(2rem, 4vw, 3rem);
+  }
+
+  .project-card--large .project-card__image-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-detail__info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2.5rem, 4vw, 3.5rem);
+  }
+
+  .footer__image-col {
+    grid-column: 1 / -1;
+  }
+
+  .footer__image-wrap {
+    aspect-ratio: 16 / 7;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__copyright {
+    white-space: nowrap;
+  }
+
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Desktop — 1024px+ */
 @media (min-width: 1024px) {
-  .main-nav {
+  .header-nav__wrapper {
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
+
+  .header-body {
+    max-width: 1200px;
+    margin-top: 80px;
+  }
+
+  .header-body p {
+    font-size: 5vw;
+    padding-right: 2vw;
+  }
+
+  .header-preview {
     display: block;
+    width: 500px;
+    height: 450px;
+    position: relative;
+    flex-shrink: 0;
   }
 
-  .menu-toggle {
-    display: none;
+  .header-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .concept__energies {
-    grid-template-columns: repeat(3, 1fr);
+  .header-nav-footer {
+    justify-content: space-between;
+  }
+
+  .header-nav-footer ul {
+    width: auto;
   }
 
   .element__grid {
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-2xl);
+    grid-template-rows: auto 1fr;
+    gap: 0 var(--space-2xl);
+  }
+
+  .element:not(.element--reverse) .element__media {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .element:not(.element--reverse) .element__heading,
+  .element:not(.element--reverse) .element__content {
+    grid-column: 2;
+  }
+
+  .element--reverse .element__heading {
+    grid-column: 1;
   }
 
   .element--reverse .element__content {
-    order: -1;
+    grid-column: 1;
+  }
+
+  .element--reverse .element__media {
+    grid-column: 2;
+    grid-row: 1 / 3;
   }
 
   .element__image {
-    aspect-ratio: 3 / 4;
+    height: 100%;
+    aspect-ratio: auto;
   }
 
   .floor-plans__grid {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
   }
+
+  /* Projects — Asymmetric editorial grid */
+  .projects-page__grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .project-card {
+    grid-column: span 6;
+  }
+
+  .project-card--large {
+    grid-column: span 8;
+  }
+
+  .project-card--offset {
+    grid-column: span 5;
+    margin-top: clamp(3rem, 6vw, 5rem);
+  }
+
+  .project-card--large .project-card__image-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-card:not(.project-card--large):not(.project-card--offset) .project-card__image-wrap {
+    aspect-ratio: 3 / 4;
+  }
+
+  .project-detail__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-detail__gallery-item:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .project-detail__gallery-item:first-child .project-detail__gallery-img {
+    aspect-ratio: 21 / 9;
+  }
+
+  .footer__main {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.6fr) minmax(0, 1.5fr);
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .footer__image-col {
+    grid-column: auto;
+  }
+
+  .footer__image-wrap {
+    aspect-ratio: 3 / 4;
+    max-height: 460px;
+  }
+
+  .footer__nav-link {
+    font-size: clamp(1.5rem, 2.2vw, 2.125rem);
+  }
 }
 
 /* Large Desktop — 1440px+ */
 @media (min-width: 1440px) {
-  :root {
-    --section-padding: 8rem 3rem;
+  .site-header {
+    padding: 20px;
+  }
+
+  .header-bar {
+    font-size: 15px;
   }
 
   .hero__content {
@@ -55,7 +226,15 @@
   }
 
   .element {
-    padding: var(--space-2xl) 4rem;
+    padding: clamp(2rem, 4vw, 3rem) 4rem;
+  }
+
+  .footer__image-wrap {
+    max-height: 520px;
+  }
+
+  .footer__nav-link {
+    font-size: clamp(1.75rem, 2.4vw, 2.375rem);
   }
 }
 
@@ -77,25 +256,48 @@
   }
 
   .hero__title-main {
-    font-size: 8rem;
+    font-size: 9rem;
   }
 }
 
 /* Small Mobile — up to 480px */
 @media (max-width: 480px) {
-  .concept__energies {
-    grid-template-columns: 1fr;
+  .element__grid {
+    display: flex;
+    flex-direction: column;
   }
 
-  .concept__energy {
-    flex-direction: row;
-    align-items: baseline;
-    gap: var(--space-md);
-    padding: var(--space-md);
+  .element:not(.element--reverse) .element__media {
+    order: 2;
   }
 
-  .concept__energy-name {
-    font-size: clamp(1.125rem, 5vw, 1.5rem);
+  .element:not(.element--reverse) .element__heading {
+    order: 1;
+  }
+
+  .element:not(.element--reverse) .element__content {
+    order: 3;
+  }
+
+  .element--reverse .element__media {
+    order: 2;
+  }
+
+  .element--reverse .element__heading {
+    order: 1;
+  }
+
+  .element--reverse .element__content {
+    order: 3;
+  }
+
+  .concept__item {
+    border-right: none !important;
+    border-bottom: 1px solid var(--color-sand);
+  }
+
+  .concept__item:last-child {
+    border-bottom: none;
   }
 
   .floor-plans__grid {
@@ -119,5 +321,143 @@
 
   .closing {
     min-height: 70vh;
+  }
+
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail__info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-detail__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail__nav-btn--next {
+    text-align: left;
+  }
+
+  .footer__bottom {
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+
+  .footer__legal {
+    gap: 0.4em;
+  }
+
+  .footer__social {
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========================================================================
+   Energy Pages — Responsive
+   ========================================================================== */
+
+/* Tablet & down */
+@media (max-width: 1024px) {
+  .energy-hero {
+    height: 82vh;
+    height: 82dvh;
+    min-height: 480px;
+  }
+
+  .energy-intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .energy-intro__meta {
+    grid-column: 1;
+  }
+}
+
+/* Mobile & small tablet */
+@media (max-width: 768px) {
+  .energy-principle {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .energy-principle__content {
+    max-width: none;
+  }
+
+  .energy-principle--reverse .energy-principle__content {
+    order: 2;
+  }
+
+  .energy-principle--reverse .energy-principle__media {
+    order: 1;
+  }
+
+  .energy-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .energy-gallery__item:first-child {
+    grid-column: 1;
+  }
+
+  .energy-gallery__img,
+  .energy-gallery__item:first-child .energy-gallery__img,
+  .energy-gallery__item:nth-child(even) .energy-gallery__img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .energy-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .energy-nav__btn--prev {
+    border-right: none;
+    border-bottom: 1px solid rgba(26, 26, 24, 0.14);
+  }
+
+  .energy-nav__btn--next {
+    text-align: left;
+  }
+
+  .energy-hero {
+    height: 74vh;
+    height: 74dvh;
+    min-height: 440px;
+  }
+
+  .energy-hero__title {
+    font-size: clamp(3rem, 16vw, 5rem);
+  }
+
+  .energy-full__img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .energy-related__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .energy-hero {
+    height: 68vh;
+    height: 68dvh;
+    min-height: 400px;
+  }
+
+  .energy-principle__media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .energy-statement__text {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .energy-related__meta span + span {
+    margin-left: 0.35rem;
   }
 }

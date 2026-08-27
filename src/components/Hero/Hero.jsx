@@ -1,8 +1,16 @@
+import { useEffect, useState } from 'react';
 import { hero } from '../../data/residences';
 
 export default function Hero() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <section className="hero" id="hero" aria-label="Hero">
+    <section className={`hero${loaded ? ' hero--loaded' : ''}`} id="hero" aria-label="Hero">
       <div className="hero__media">
         <img
           src={hero.image}

@@ -41,6 +41,7 @@ export default function EnquiryForm() {
     return (
       <section className="enquiry" id="enquire">
         <div className="enquiry__inner">
+          <span className="enquiry__eyebrow">Contact</span>
           <h2 className="enquiry__title">
             Let nature lead<br /> the way.
           </h2>
@@ -55,6 +56,7 @@ export default function EnquiryForm() {
   return (
     <section className="enquiry" id="enquire">
       <div className="enquiry__inner reveal" ref={ref}>
+        <span className="enquiry__eyebrow">Contact</span>
         <h2 className="enquiry__title">
           Let nature lead<br /> the way.
         </h2>

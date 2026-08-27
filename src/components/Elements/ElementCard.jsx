@@ -2,7 +2,7 @@ import { useReveal } from '../../hooks/useReveal';
 
 export default function ElementCard({ residence }) {
   const ref = useReveal();
-  const { number, name, meaning, description, image, imageAlt, reverse } = residence;
+  const { number, name, meaning, title, description, image, imageAlt, reverse } = residence;
 
   return (
     <article
@@ -22,10 +22,14 @@ export default function ElementCard({ residence }) {
           </div>
         )}
 
-        <div className="element__content">
+        <div className="element__heading">
           <span className="element__number">{number}</span>
           <h3 className="element__name">{name}</h3>
+        </div>
+
+        <div className="element__content">
           <p className="element__meaning">{meaning}</p>
+          {title && <p className="element__title">{title}</p>}
           <p className="element__description">{description}</p>
         </div>
 

@@ -1,15 +1,21 @@
 import { useReveal } from '../../hooks/useReveal';
-import heroImg from '../../assets/images/hero.svg';
+import heroImg from '../../assets/images/Hero.png';
 
 export default function ClosingSection() {
   const ref = useReveal();
 
   return (
-    <section className="closing" aria-label="Closing">
-      <div className="closing__media">
+    <section className="closing" aria-label="Call to action">
+      <div className="closing__bg-lines" aria-hidden="true">
+        <div className="closing__bg-line" />
+        <div className="closing__bg-line" />
+        <div className="closing__bg-line" />
+        <div className="closing__bg-line" />
+      </div>
+      <div className="closing__media" aria-hidden="true">
         <img
           src={heroImg}
-          alt="PRANA Residences architectural landscape"
+          alt=""
           className="closing__image"
           loading="lazy"
           decoding="async"
@@ -17,13 +23,9 @@ export default function ClosingSection() {
         <div className="closing__overlay" />
       </div>
       <div className="closing__content reveal" ref={ref}>
-        <h2 className="closing__title">A quieter way to live.</h2>
-        <p className="closing__description">
-          Architecture, interiors and landscape come together around the six
-          energies of nature.
-        </p>
+        <h2 className="closing__title">Let's create something extraordinary together.</h2>
         <a href="#enquire" className="closing__cta">
-          REQUEST A CONVERSATION
+          START A CONVERSATION
         </a>
       </div>
     </section>

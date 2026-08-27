@@ -8,6 +8,7 @@ export default function Elements() {
   return (
     <section className="elements" id="elements">
       <div className="elements__header reveal" ref={headerRef}>
+        <span className="elements__eyebrow">Featured Works</span>
         <h2 className="elements__title">
           Six identities.<br /> One living idea.
         </h2>

@@ -1,16 +1,21 @@
 :root {
-  --color-off-white: #F5F0EB;
+  --color-cream: #F5F0E8;
+  --color-ivory: #FAF8F4;
   --color-sand: #E8DFD5;
   --color-beige: #D4C5B5;
   --color-stone: #B8A99A;
   --color-earth: #8B7355;
-  --color-forest: #2C3A2F;
-  --color-forest-deep: #1E2A21;
-  --color-charcoal: #2A2A28;
+  --color-charcoal: #1A1A18;
+  --color-near-black: #111110;
+  --color-deep-black: #0A0A09;
+  --color-muted: #6B6560;
+  --color-muted-light: #9A918A;
   --color-white: #FEFDFB;
-  --color-text: #3A3632;
-  --color-text-light: #6B6560;
-  --color-text-muted: #9A918A;
+  --color-text: #2A2826;
+  --color-text-light: #5A5550;
+  --color-text-muted: #8A847E;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-light: rgba(255, 255, 255, 0.12);
 
   --font-serif: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -25,10 +30,12 @@
   --space-4xl: clamp(5rem, 10vw, 9rem);
 
   --max-width: 1400px;
-  --max-width-text: 800px;
-  --header-height: clamp(3.5rem, 8vw, 5rem);
-  --section-padding: clamp(3rem, 8vw, 8rem) clamp(1.25rem, 4vw, 3rem);
+  --max-width-text: 720px;
+  --header-height: clamp(4rem, 8vw, 5.5rem);
+  --section-padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 4vw, 3rem);
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --duration: 0.4s;
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration: 0.5s;
+  --duration-slow: 0.8s;
 }
