@@ -115,12 +115,12 @@ function Body({ links, selectedLink, setSelectedLink, onNavigate, closeMenu }) {
   function handleNavigate(e, link) {
     e.preventDefault();
     closeMenu();
-    if (link.route === 'homes') {
+    if (link.external) {
+      window.open(link.href, '_blank', 'noopener,noreferrer');
+    } else if (link.route === 'homes') {
       onNavigate('homes');
     } else if (link.route === 'category') {
       onNavigate('category', link.id);
-    } else if (link.route === 'floorPlans') {
-      onNavigate('floorPlans');
     } else {
       onNavigate('home');
       if (link.anchor) {

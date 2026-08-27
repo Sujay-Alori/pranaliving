@@ -4,7 +4,7 @@ import heroImg from '../../assets/images/Hero.png';
 const footerNav = [
   { label: 'Home', href: '#home', route: 'home' },
   { label: 'Flats', href: '#explore', route: 'category', id: '01' },
-  { label: 'Floor Plans', href: '#floor-plans', route: 'floorPlans' },
+  { label: 'Map', href: 'https://maps.app.goo.gl/ozwghKTXLcznH4x19?g_st=iw', external: true },
   { label: 'Contact', href: '#enquire', route: 'home', anchor: 'enquire' },
 ];
 
@@ -32,12 +32,12 @@ export default function Footer({ onNavigate }) {
 
   function handleNav(e, link) {
     e.preventDefault();
-    if (link.route === 'homes') {
+    if (link.external) {
+      window.open(link.href, '_blank', 'noopener,noreferrer');
+    } else if (link.route === 'homes') {
       onNavigate('homes');
     } else if (link.route === 'category') {
       onNavigate('category', link.id);
-    } else if (link.route === 'floorPlans') {
-      onNavigate('floorPlans');
     } else {
       onNavigate('home');
       if (link.anchor) {

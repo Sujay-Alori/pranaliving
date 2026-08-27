@@ -498,7 +498,7 @@ export const floorPlanFilter = [
 export const navLinks = [
   { label: 'Home', href: '#home', route: 'home', src: heroImg },
   { label: 'Flats', href: '#explore', route: 'category', id: '01', src: suryaImg },
-  { label: 'Floor Plans', href: '#floor-plans', route: 'floorPlans', src: buildingPlanA },
+  { label: 'Map', href: 'https://maps.app.goo.gl/ozwghKTXLcznH4x19?g_st=iw', external: true, src: akashImg },
   { label: 'Contact', href: '#enquire', route: 'home', anchor: 'enquire', src: akashImg },
 ];
 
