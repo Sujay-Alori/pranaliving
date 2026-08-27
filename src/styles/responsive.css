@@ -461,3 +461,90 @@
     margin-left: 0.35rem;
   }
 }
+
+/* ==========================================================================
+   Media Player — Responsive
+   ========================================================================== */
+
+/* Narrow phones: compact controls, touch-friendly */
+@media (max-width: 600px) {
+  .category__header {
+    padding-top: clamp(6rem, 20vw, 8rem);
+  }
+
+  .media-player__surface {
+    aspect-ratio: 4 / 5;
+  }
+
+  .media-video__bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .media-video__bottom .media-nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .media-video__tools {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .media-video__tools input[type='range'] {
+    width: 72px;
+  }
+
+  .media-image__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .media-image__dots {
+    right: clamp(1rem, 3vw, 2rem);
+    left: clamp(1rem, 3vw, 2rem);
+  }
+
+  .media-nav__btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Short landscape / small heights */
+@media (max-height: 600px) and (orientation: landscape) {
+  .media-player__surface {
+    aspect-ratio: 16 / 9;
+  }
+
+  .media-video__title {
+    font-size: 1rem;
+  }
+
+  .media-video__play {
+    width: 56px;
+    height: 56px;
+  }
+
+  .media-video__play .media-ctl__icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Comfortable composition on large screens */
+@media (min-width: 1280px) {
+  .category__header {
+    max-width: 72rem;
+  }
+}
+
+/* Ultra-wide: constrain player for cinematic composition */
+@media (min-width: 1920px) {
+  .media-player__body {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+}
+

@@ -78,7 +78,7 @@ export default function Footer() {
               <span className="footer__label">(INFO)</span>
               <address className="footer__address">
                 <span className="footer__address-line">A: 101 Days Rd, Grange QLD 4051</span>
-                <span className="footer__address-line">E: info@obeystudio.com.au</span>
+                <span className="footer__address-line">E: info@yourstudio.com.au</span>
                 <span className="footer__address-line">P: 07 3110 1031</span>
                 <span className="footer__address-line">H: Monday to Friday, 8:30am &ndash; 5:00pm</span>
               </address>
@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            &copy; 2025 OBEY STUDIO{status ? <>&nbsp;&nbsp;|&nbsp;&nbsp;{status}</> : null}
+            &copy; 2025 YOUR STUDIO{status ? <>&nbsp;&nbsp;|&nbsp;&nbsp;{status}</> : null}
           </p>
 
           <div className="footer__legal">

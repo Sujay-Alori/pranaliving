@@ -1,6 +1,6 @@
 import { useReveal } from '../../hooks/useReveal';
 
-export default function ElementCard({ residence }) {
+export default function ElementCard({ residence, onNavigate }) {
   const ref = useReveal();
   const { number, name, meaning, title, description, image, imageAlt, reverse } = residence;
 
@@ -9,7 +9,13 @@ export default function ElementCard({ residence }) {
       className={`element${reverse ? ' element--reverse' : ''}`}
       id={`element-${residence.id}`}
     >
-      <div className="element__grid reveal" ref={ref}>
+      <button
+        className="element__grid reveal"
+        ref={ref}
+        onClick={() => onNavigate('category', number)}
+        aria-haspopup="false"
+        aria-label={`Open ${name} media player`}
+      >
         {!reverse && (
           <div className="element__media">
             <img
@@ -44,7 +50,7 @@ export default function ElementCard({ residence }) {
             />
           </div>
         )}
-      </div>
+      </button>
     </article>
   );
 }

@@ -2,7 +2,7 @@ import { useReveal } from '../../hooks/useReveal';
 import { residences } from '../../data/residences';
 import ElementCard from './ElementCard';
 
-export default function Elements() {
+export default function Elements({ onNavigate }) {
   const headerRef = useReveal();
 
   return (
@@ -15,7 +15,11 @@ export default function Elements() {
       </div>
 
       {residences.map((residence) => (
-        <ElementCard key={residence.id} residence={residence} />
+        <ElementCard
+          key={residence.id}
+          residence={residence}
+          onNavigate={onNavigate}
+        />
       ))}
     </section>
   );

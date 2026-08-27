@@ -32,7 +32,7 @@ export default function Header({ onNavigate }) {
           href="#"
           className="header-logo"
           aria-label="PRANA Residences home"
-          onClick={(e) => { e.preventDefault(); closeMenu(); onNavigate('home'); }}
+          onClick={(e) => { e.preventDefault(); closeMenu(); onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
         >
           <span className="header-logo__name">PRANA</span>
           <span className="header-logo__tagline">Residences</span>
@@ -169,7 +169,7 @@ function Footer() {
     <div className="header-nav-footer">
       <ul>
         <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-          <span>Made by:</span> OBEY STUDIO
+          <span>Made by:</span> YOUR STUDIO
         </motion.li>
       </ul>
       <ul>
