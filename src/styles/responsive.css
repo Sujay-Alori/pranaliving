@@ -1,0 +1,123 @@
+/* ==========================================================================
+   PRANA Residences — Responsive Styles
+   Mobile-first breakpoints
+   ========================================================================== */
+
+/* Tablet — 768px+ */
+@media (min-width: 768px) {
+  .enquiry-form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop — 1024px+ */
+@media (min-width: 1024px) {
+  .main-nav {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .concept__energies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .element__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .element--reverse .element__content {
+    order: -1;
+  }
+
+  .element__image {
+    aspect-ratio: 3 / 4;
+  }
+
+  .floor-plans__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+/* Large Desktop — 1440px+ */
+@media (min-width: 1440px) {
+  :root {
+    --section-padding: 8rem 3rem;
+  }
+
+  .hero__content {
+    padding-left: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  .element {
+    padding: var(--space-2xl) 4rem;
+  }
+}
+
+/* Very Large Screens — 1920px+ */
+@media (min-width: 1920px) {
+  :root {
+    --max-width: 1600px;
+  }
+
+  .hero__image {
+    object-position: center 25%;
+  }
+}
+
+/* Ultra-wide — 2560px+ */
+@media (min-width: 2560px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .hero__title-main {
+    font-size: 8rem;
+  }
+}
+
+/* Small Mobile — up to 480px */
+@media (max-width: 480px) {
+  .concept__energies {
+    grid-template-columns: 1fr;
+  }
+
+  .concept__energy {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-md);
+    padding: var(--space-md);
+  }
+
+  .concept__energy-name {
+    font-size: clamp(1.125rem, 5vw, 1.5rem);
+  }
+
+  .floor-plans__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .hero {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero__content {
+    text-align: center;
+    padding-bottom: clamp(2rem, 8vh, 4rem);
+  }
+
+  .hero__cta {
+    width: 100%;
+  }
+
+  .closing {
+    min-height: 70vh;
+  }
+}
