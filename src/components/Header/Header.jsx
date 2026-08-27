@@ -170,22 +170,6 @@ function Preview({ src, isActive }) {
 function Footer() {
   return (
     <div className="header-nav-footer">
-      <ul>
-        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-          <span>Made by:</span> YOUR STUDIO
-        </motion.li>
-      </ul>
-      <ul>
-        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-          <span>Typography:</span> Google Fonts
-        </motion.li>
-      </ul>
-      <ul>
-        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-          <span>Location:</span> Brisbane, QLD
-        </motion.li>
-      </ul>
-
     </div>
   );
 }
