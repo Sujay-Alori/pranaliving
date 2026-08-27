@@ -185,14 +185,7 @@ function Footer() {
           <span>Location:</span> Brisbane, QLD
         </motion.li>
       </ul>
-      <ul>
-        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-          Privacy Policy
-        </motion.li>
-        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-          Terms &amp; Conditions
-        </motion.li>
-      </ul>
+
     </div>
   );
 }
