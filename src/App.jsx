@@ -6,6 +6,7 @@ import ProjectsPage from './pages/Projects/ProjectsPage';
 import ProjectDetail from './pages/Projects/ProjectDetail';
 import EnergyPage from './pages/Energies/EnergyPage';
 import CategoryPage from './pages/Category/CategoryPage';
+import FloorPlansPage from './pages/FloorPlans/FloorPlansPage';
 
 function getRoute() {
   const hash = window.location.hash.slice(1);
@@ -19,6 +20,7 @@ function getRoute() {
     return { page: 'category', id: hash.replace('category/', '') };
   }
   if (hash === 'projects') return { page: 'projects' };
+  if (hash === 'floor-plans') return { page: 'floorPlans' };
   return { page: 'home' };
 }
 
@@ -34,7 +36,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (route.page === 'category' || route.page === 'home') {
+    if (route.page === 'category' || route.page === 'home' || route.page === 'floorPlans') {
       window.scrollTo({ top: 0, behavior: 'auto' });
     }
   }, [route]);
@@ -48,6 +50,8 @@ export default function App() {
       window.location.hash = 'projects';
     } else if (page === 'category') {
       window.location.hash = `category/${id}`;
+    } else if (page === 'floorPlans') {
+      window.location.hash = 'floor-plans';
     } else {
       window.location.hash = '';
     }
@@ -70,8 +74,11 @@ export default function App() {
         {route.page === 'category' && (
           <CategoryPage categoryId={route.id} onNavigate={navigate} />
         )}
+        {route.page === 'floorPlans' && (
+          <FloorPlansPage onNavigate={navigate} />
+        )}
       </main>
-      <Footer />
+      <Footer onNavigate={navigate} />
     </>
   );
 }

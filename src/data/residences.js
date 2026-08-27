@@ -47,22 +47,13 @@ import floorPlan1 from '../assets/images/floor-plan-1.svg';
 import floorPlan2 from '../assets/images/floor-plan-2.svg';
 import floorPlan3 from '../assets/images/floor-plan-3.svg';
 import floorPlan4 from '../assets/images/floor-plan-4.svg';
+import buildingPlanA from '../assets/images/Picture2.png';
+import buildingPlanB from '../assets/images/Picture3.png';
 import { categoryMedia } from './categoryMedia';
 
 export const hero = {
   image: heroImg,
   alt: 'PRANA Residences architectural exterior with lush greenery and natural stone facade',
-};
-
-export const studio = {
-  eyebrow: 'THE STUDIO',
-  headline: 'Architecture shaped by context, material and time.',
-  description:
-    'PRANA Residences is a design-led architecture studio creating thoughtful, enduring spaces. We draw from the fundamental energies of nature to design homes that breathe, adapt and inspire — spaces where material honesty, climate sensitivity and spatial clarity converge into architecture that lasts.',
-  philosophyLeft:
-    'We believe architecture is not decoration — it is the distillation of context, climate and human experience into spaces that endure.',
-  philosophyImageAlt:
-    'Architectural detail showcasing natural materials and light',
 };
 
 export const energies = [
@@ -624,70 +615,34 @@ export const categories = ['All', 'Residential', 'Commercial', 'Cultural'];
 
 export const floorPlans = [
   {
-    id: 'plan-2bhk',
-    name: '2 BHK',
-    size: '1,150 sq. ft.',
-    image: floorPlan1,
-    alt: '2 BHK Floor Plan — 1,150 sq. ft.',
+    id: 'plan-type-a',
+    name: 'Type A',
+    title: 'Building Plan A',
+    bedrooms: '',
+    size: '',
+    floors: '',
+    image: buildingPlanA,
+    alt: 'Building Plan A — complete floor plan.',
   },
   {
-    id: 'plan-2-5bhk',
-    name: '2.5 BHK',
-    size: '1,450 sq. ft.',
-    image: floorPlan2,
-    alt: '2.5 BHK Floor Plan — 1,450 sq. ft.',
-  },
-  {
-    id: 'plan-3bhk',
-    name: '3 BHK',
-    size: '1,800 sq. ft.',
-    image: floorPlan3,
-    alt: '3 BHK Floor Plan — 1,800 sq. ft.',
-  },
-  {
-    id: 'plan-3-5bhk',
-    name: '3.5 BHK',
-    size: '2,200 sq. ft.',
-    image: floorPlan4,
-    alt: '3.5 BHK Floor Plan — 2,200 sq. ft.',
+    id: 'plan-type-b',
+    name: 'Type B',
+    title: 'Building Plan B',
+    bedrooms: '',
+    size: '',
+    floors: '',
+    image: buildingPlanB,
+    alt: 'Building Plan B — complete floor plan.',
   },
 ];
 
-export const team = [
-  {
-    id: 'arjun-mehta',
-    name: 'Arjun Mehta',
-    role: 'Founding Principal',
-    description:
-      'With over two decades of practice, Arjun leads the studio\'s vision for architecture rooted in place, materiality and the natural world.',
-  },
-  {
-    id: 'priya-vasan',
-    name: 'Priya Vasan',
-    role: 'Design Director',
-    description:
-      'Priya shapes the studio\'s design language, weaving together landscape, light and material into cohesive spatial narratives.',
-  },
-  {
-    id: 'rahul-iyer',
-    name: 'Rahul Iyer',
-    role: 'Head of Interiors',
-    description:
-      'Rahul brings a refined sensibility to interior spaces, selecting materials and finishes that honour the architectural intent of each project.',
-  },
-  {
-    id: 'meera-nair',
-    name: 'Meera Nair',
-    role: 'Sustainability Lead',
-    description:
-      'Meera ensures every project achieves environmental performance without compromising on spatial or material quality.',
-  },
+export const floorPlanFilter = [
+  { label: 'All', value: 'all' },
 ];
 
 export const navLinks = [
-  { label: 'Home', href: '#home', src: heroImg },
-  { label: 'Studio', href: '#concept', src: heroImg },
-  { label: 'Flats', href: '#projects', src: suryaImg },
-  { label: 'Floor Plans', href: '#floor-plans', src: floorPlan1 },
-  { label: 'Enquire', href: '#enquire', src: akashImg },
+  { label: 'Home', href: '#home', route: 'home', src: heroImg },
+  { label: 'Flats', href: '#explore', route: 'category', id: '01', src: suryaImg },
+  { label: 'Floor Plans', href: '#floor-plans', route: 'floorPlans', src: buildingPlanA },
+  { label: 'Contact', href: '#enquire', route: 'home', anchor: 'enquire', src: akashImg },
 ];

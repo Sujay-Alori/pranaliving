@@ -548,3 +548,47 @@
   }
 }
 
+/* ==========================================================================
+   Floor Plans Page — Responsive
+   ========================================================================== */
+@media (max-width: 768px) {
+  .fp-card__specs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .fp-hero {
+    min-height: 54vh;
+    min-height: 54dvh;
+  }
+
+  .fp-card__specs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fp-card__spec:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .fp-lightbox__stage {
+    width: 100vw;
+    height: 72vh;
+  }
+
+  .fp-lightbox__nav {
+    width: 42px;
+    height: 42px;
+  }
+
+  .fp-lightbox__toolbar {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .fp-lightbox__close {
+    width: 42px;
+    height: 42px;
+  }
+}
+

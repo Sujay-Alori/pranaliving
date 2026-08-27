@@ -2,11 +2,10 @@ import { useState, useEffect } from 'react';
 import heroImg from '../../assets/images/Hero.png';
 
 const footerNav = [
-  { label: 'Home', href: '#' },
-  { label: 'Works', href: '#projects' },
-  { label: 'Studio', href: '#concept' },
-  { label: 'Floor Plans', href: '#floor-plans' },
-  { label: 'Contact Us', href: '#enquire' },
+  { label: 'Home', href: '#home', route: 'home' },
+  { label: 'Flats', href: '#explore', route: 'category', id: '01' },
+  { label: 'Floor Plans', href: '#floor-plans', route: 'floorPlans' },
+  { label: 'Contact', href: '#enquire', route: 'home', anchor: 'enquire' },
 ];
 
 function getStudioTime() {
@@ -22,7 +21,7 @@ function getStudioTime() {
   }
 }
 
-export default function Footer() {
+export default function Footer({ onNavigate }) {
   const [status, setStatus] = useState('');
 
   useEffect(() => {
@@ -30,6 +29,25 @@ export default function Footer() {
     const interval = setInterval(() => setStatus(getStudioTime()), 60000);
     return () => clearInterval(interval);
   }, []);
+
+  function handleNav(e, link) {
+    e.preventDefault();
+    if (link.route === 'category') {
+      onNavigate('category', link.id);
+    } else if (link.route === 'floorPlans') {
+      onNavigate('floorPlans');
+    } else {
+      onNavigate('home');
+      if (link.anchor) {
+        setTimeout(() => {
+          const el = document.getElementById(link.anchor);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 120);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  }
 
   return (
     <footer className="site-footer">
@@ -54,7 +72,7 @@ export default function Footer() {
               <ul className="footer__nav-list">
                 {footerNav.map((link, i) => (
                   <li key={`${link.href}-${i}`}>
-                    <a href={link.href} className="footer__nav-link">
+                    <a href={link.href} className="footer__nav-link" onClick={(e) => handleNav(e, link)}>
                       {link.label}
                     </a>
                   </li>

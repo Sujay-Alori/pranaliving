@@ -115,17 +115,20 @@ function Body({ links, selectedLink, setSelectedLink, onNavigate, closeMenu }) {
   function handleNavigate(e, link) {
     e.preventDefault();
     closeMenu();
-    if (link.href === '#projects') {
-      onNavigate('projects');
-    } else if (link.href === '#home') {
-      onNavigate('home');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (link.route === 'category') {
+      onNavigate('category', link.id);
+    } else if (link.route === 'floorPlans') {
+      onNavigate('floorPlans');
     } else {
       onNavigate('home');
-      setTimeout(() => {
-        const el = document.querySelector(link.href);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 60);
+      if (link.anchor) {
+        setTimeout(() => {
+          const el = document.getElementById(link.anchor);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 120);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
   }
 

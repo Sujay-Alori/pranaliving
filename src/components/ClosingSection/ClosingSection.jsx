@@ -1,8 +1,13 @@
 import { useReveal } from '../../hooks/useReveal';
 import heroImg from '../../assets/images/Hero.png';
 
-export default function ClosingSection() {
+export default function ClosingSection({ onNavigate }) {
   const ref = useReveal();
+
+  function goFloorPlans(e) {
+    e.preventDefault();
+    if (onNavigate) onNavigate('floorPlans');
+  }
 
   return (
     <section className="closing" aria-label="Call to action">
@@ -24,9 +29,14 @@ export default function ClosingSection() {
       </div>
       <div className="closing__content reveal" ref={ref}>
         <h2 className="closing__title">Let's create something extraordinary together.</h2>
-        <a href="#enquire" className="closing__cta">
-          START A CONVERSATION
-        </a>
+        <div className="closing__actions">
+          <a href="#floor-plans" className="closing__cta closing__cta--ghost" onClick={goFloorPlans}>
+            VIEW FLOOR PLANS &rarr;
+          </a>
+          <a href="#enquire" className="closing__cta">
+            START A CONVERSATION
+          </a>
+        </div>
       </div>
     </section>
   );
