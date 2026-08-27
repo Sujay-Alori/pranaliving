@@ -6,29 +6,42 @@ import jalaImg from '../assets/images/jala/JALA.png';
 import vayuImg from '../assets/images/VAYU/Vayu.png';
 import akashImg from '../assets/images/AKASH/AKASH.png';
 import prithviGal1 from '../assets/images/Prithvi/Picture5.png';
-import prithviGal2 from '../assets/images/Prithvi/Picture11.png';
-import prithviGal3 from '../assets/images/Prithvi/Picture13.png';
-import prithviGal4 from '../assets/images/Prithvi/Picture15.png';
+import prithviGal2 from '../assets/images/Prithvi/Picture6.png';
+import prithviGal3 from '../assets/images/Prithvi/Picture7.png';
+import prithviGal4 from '../assets/images/Prithvi/Picture8.png';
+import prithviGal5 from '../assets/images/Prithvi/Picture11.png';
+import prithviGal6 from '../assets/images/Prithvi/Picture13.png';
+import prithviGal7 from '../assets/images/Prithvi/Picture15.png';
 import vanamGal1 from '../assets/images/VANAM/Picture16.png';
-import vanamGal2 from '../assets/images/VANAM/Picture21.png';
-import vanamGal3 from '../assets/images/VANAM/Picture27.png';
-import vanamGal4 from '../assets/images/VANAM/Picture33.png';
+import vanamGal2 from '../assets/images/VANAM/Picture17.png';
+import vanamGal3 from '../assets/images/VANAM/Picture18.png';
+import vanamGal4 from '../assets/images/VANAM/Picture21.png';
+import vanamGal5 from '../assets/images/VANAM/Picture27.png';
+import vanamGal6 from '../assets/images/VANAM/Picture33.png';
 import suryaGal1 from '../assets/images/Surya/Picture35.png';
-import suryaGal2 from '../assets/images/Surya/Picture38.png';
-import suryaGal3 from '../assets/images/Surya/Picture42.png';
-import suryaGal4 from '../assets/images/Surya/Picture44.png';
+import suryaGal2 from '../assets/images/Surya/Picture36.png';
+import suryaGal3 from '../assets/images/Surya/Picture37.png';
+import suryaGal4 from '../assets/images/Surya/Picture38.png';
+import suryaGal5 from '../assets/images/Surya/Picture42.png';
+import suryaGal6 from '../assets/images/Surya/Picture44.png';
 import jalaGal1 from '../assets/images/jala/Picture45.png';
-import jalaGal2 from '../assets/images/jala/Picture50.png';
-import jalaGal3 from '../assets/images/jala/Picture55.png';
-import jalaGal4 from '../assets/images/jala/Picture58.png';
+import jalaGal2 from '../assets/images/jala/Picture46.png';
+import jalaGal3 from '../assets/images/jala/Picture47.png';
+import jalaGal4 from '../assets/images/jala/Picture50.png';
+import jalaGal5 from '../assets/images/jala/Picture55.png';
+import jalaGal6 from '../assets/images/jala/Picture58.png';
 import vayuGal1 from '../assets/images/VAYU/Picture60.png';
-import vayuGal2 from '../assets/images/VAYU/Picture64.png';
-import vayuGal3 from '../assets/images/VAYU/Picture66.png';
-import vayuGal4 from '../assets/images/VAYU/Picture68.png';
+import vayuGal2 from '../assets/images/VAYU/Picture61.png';
+import vayuGal3 from '../assets/images/VAYU/Picture62.png';
+import vayuGal4 from '../assets/images/VAYU/Picture64.png';
+import vayuGal5 from '../assets/images/VAYU/Picture66.png';
+import vayuGal6 from '../assets/images/VAYU/Picture68.png';
 import akashGal1 from '../assets/images/AKASH/Picture70.png';
-import akashGal2 from '../assets/images/AKASH/Picture73.png';
-import akashGal3 from '../assets/images/AKASH/Picture77.png';
-import akashGal4 from '../assets/images/AKASH/Picture79.png';
+import akashGal2 from '../assets/images/AKASH/Picture71.png';
+import akashGal3 from '../assets/images/AKASH/Picture72.png';
+import akashGal4 from '../assets/images/AKASH/Picture73.png';
+import akashGal5 from '../assets/images/AKASH/Picture77.png';
+import akashGal6 from '../assets/images/AKASH/Picture79.png';
 import akashNew1 from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akash/ChatGPT Image Aug 16, 2026, 03_16_23 PM.png';
 import akashNew2 from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akash/ChatGPT Image Aug 16, 2026, 03_16_25 PM.png';
 import akashNew3 from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akash/ChatGPT Image Aug 16, 2026, 03_16_27 PM.png';
@@ -43,10 +56,11 @@ import akashNew11 from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akas
 import akashNew12 from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akash/ChatGPT Image Aug 16, 2026, 03_40_00 PM.png';
 import akashNew13 from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akash/ChatGPT Image Aug 16, 2026, 03_44_45 PM.png';
 import akashVideo from '../assets/images/AKASH/akash-20260827T090927Z-1-001/akash/Video1.mp4';
-import floorPlan1 from '../assets/images/floor-plan-1.svg';
-import floorPlan2 from '../assets/images/floor-plan-2.svg';
-import floorPlan3 from '../assets/images/floor-plan-3.svg';
-import floorPlan4 from '../assets/images/floor-plan-4.svg';
+import prithviVideo from '../assets/images/Prithvi/prithvi/Video1.mp4';
+import vanamVideo from '../assets/images/VANAM/vanam/vanam.mp4';
+import suryaVideo from '../assets/images/Surya/surya/Video1_000.mp4';
+import jalaVideo from '../assets/images/jala/jala/Video1.mp4';
+import vayuVideo from '../assets/images/VAYU/vayu/Video1.mp4';
 import buildingPlanA from '../assets/images/Picture2.png';
 import buildingPlanB from '../assets/images/Picture3.png';
 import { categoryMedia } from './categoryMedia';
@@ -218,165 +232,6 @@ export const energies = [
     principleImages: [akashGal1, akashGal2],
     gallery: [akashGal3, akashImg, akashGal4, akashGal1],
     related: ['akash-studios'],
-  },
-];
-
-export const sixHomes = [
-  {
-    id: 'jala',
-    number: '01',
-    name: 'JALA HOMES',
-    element: 'Water & Serenity',
-    theme: 'Water, calm, reflection, flow, serenity, natural light',
-    experience:
-      'Calm, flowing and reflective spaces that bring peace and clarity.',
-    features: [
-      'Curved edges and soft transitions',
-      'Natural light and cross ventilation',
-      'Soothing palette inspired by water',
-      'Quiet corners and flowing views',
-    ],
-    material: 'Light Kota / Terrazzo',
-    materialDetail:
-      'Cool, calm & refreshing surfaces that mirror the stillness of water.',
-    mood: 'Cool, calm & refreshing',
-    floorPlan: floorPlan1,
-    floorPlanAlt: 'JALA Homes floor plan',
-    image: jalaGal3,
-    imageAlt: 'JALA home interior with calm water-inspired palette and natural light',
-    poster: jalaImg,
-    posterAlt: 'JALA Homes — Water & Serenity',
-    video: '/videos/jala-home.mp4',
-  },
-  {
-    id: 'vanam',
-    number: '02',
-    name: 'VANAM HOMES',
-    element: 'Forest & Growth',
-    theme: 'Forest, vegetation, growth, greenery, natural materials',
-    experience:
-      'Green, lush and connected to nature. A home that grows with you.',
-    features: [
-      'Earthy textures and organic forms',
-      'Direct connection with greenery',
-      'Warm, grounding and nurturing',
-      'Indoor–outdoor living',
-    ],
-    material: 'Terracotta Tile',
-    materialDetail:
-      'Warm, earthy & organic materials that ground every space.',
-    mood: 'Warm, earthy & organic',
-    floorPlan: floorPlan2,
-    floorPlanAlt: 'VANAM Homes floor plan',
-    image: vanamGal3,
-    imageAlt: 'VANAM home interior connected to lush vegetation and natural materials',
-    poster: vanamImg,
-    posterAlt: 'VANAM Homes — Forest & Growth',
-    video: '/videos/vanam-home.mp4',
-  },
-  {
-    id: 'akash',
-    number: '03',
-    name: 'AKASH HOMES',
-    element: 'Space & Openness',
-    theme: 'Space, openness, sky, volume, freedom',
-    experience:
-      'Open, expansive and infinite. Made for freedom & flow.',
-    features: [
-      'Double height & skylight options',
-      'Minimal walls, maximum space',
-      'Light, open and tranquil',
-      'A sense of space and stillness',
-    ],
-    material: 'Microcement / Ivory Terrazzo',
-    materialDetail:
-      'Seamless, minimal & timeless surfaces that never interrupt the volume.',
-    mood: 'Seamless, minimal & timeless',
-    floorPlan: floorPlan3,
-    floorPlanAlt: 'AKASH Homes floor plan',
-    image: akashGal3,
-    imageAlt: 'AKASH home interior with soaring volume and expansive natural light',
-    poster: akashImg,
-    posterAlt: 'AKASH Homes — Space & Openness',
-    video: '/videos/akash-home.mp4',
-  },
-  {
-    id: 'vayu',
-    number: '04',
-    name: 'VAYU HOMES',
-    element: 'Air & Movement',
-    theme: 'Air, breeze, ventilation, movement, lightness',
-    experience:
-      'Light, breezy and dynamic. Spaces that breathe.',
-    features: [
-      'Cross ventilation & perforated screens',
-      'Light fabrics and soft movement',
-      'Cool tones and airy ambience',
-      'Energy that flows freely',
-    ],
-    material: 'Light Grey Kota / Terrazzo',
-    materialDetail:
-      'Cool, light & breezy materials that keep the air moving.',
-    mood: 'Cool, light & breezy',
-    floorPlan: floorPlan4,
-    floorPlanAlt: 'VAYU Homes floor plan',
-    image: vayuGal3,
-    imageAlt: 'VAYU home interior with open layers and natural cross-ventilation',
-    poster: vayuImg,
-    posterAlt: 'VAYU Homes — Air & Movement',
-    video: '/videos/vayu-home.mp4',
-  },
-  {
-    id: 'prithvi',
-    number: '05',
-    name: 'PRITHVI HOMES',
-    element: 'Earth & Stability',
-    theme: 'Earth, ground, stability, material, permanence',
-    experience:
-      'Grounded, strong and warm. Built to last, made for life.',
-    features: [
-      'Solid materials & natural textures',
-      'Warm, earthy colour palette',
-      'Private, secure and rooted',
-      'Stability in every detail',
-    ],
-    material: 'Cuddapah / Tundum Stone',
-    materialDetail:
-      'Strong, grounded & enduring materials that wear beautifully with time.',
-    mood: 'Strong, grounded & enduring',
-    floorPlan: floorPlan2,
-    floorPlanAlt: 'PRITHVI Homes floor plan',
-    image: prithviGal3,
-    imageAlt: 'PRITHVI home interior with natural stone and warm earthy textures',
-    poster: prithviImg,
-    posterAlt: 'PRITHVI Homes — Earth & Stability',
-    video: '/videos/prithvi-home.mp4',
-  },
-  {
-    id: 'surya',
-    number: '06',
-    name: 'SURYA HOMES',
-    element: 'Sun & Vitality',
-    theme: 'Sun, light, energy, warmth, vitality',
-    experience:
-      'Bright, energetic and radiant. Filled with warmth and life.',
-    features: [
-      'Abundant sunlight & open views',
-      'Warm tones & natural finishes',
-      'Uplifting, vibrant & positive',
-      'Joyful spaces to gather',
-    ],
-    material: 'Sandstone / Terracotta',
-    materialDetail:
-      'Warm, radiant & vibrant materials that glow with natural light.',
-    mood: 'Warm, radiant & vibrant',
-    floorPlan: floorPlan1,
-    floorPlanAlt: 'SURYA Homes floor plan',
-    image: suryaGal3,
-    imageAlt: 'SURYA home interior filled with warm directional sunlight',
-    poster: suryaImg,
-    posterAlt: 'SURYA Homes — Sun & Vitality',
-    video: '/videos/surya-home.mp4',
   },
 ];
 
@@ -645,4 +500,169 @@ export const navLinks = [
   { label: 'Flats', href: '#explore', route: 'category', id: '01', src: suryaImg },
   { label: 'Floor Plans', href: '#floor-plans', route: 'floorPlans', src: buildingPlanA },
   { label: 'Contact', href: '#enquire', route: 'home', anchor: 'enquire', src: akashImg },
+];
+
+export const homes = [
+  {
+    id: 'prithvi',
+    number: '01',
+    name: 'PRITHVI',
+    element: 'Earth',
+    elementFull: 'Earth — Ground, Material, Place',
+    tagline: 'Grounded by earth.',
+    description:
+      'Rooted in the essence of the earth, PRITHVI homes embody strength, stability and grounding. Natural stone surfaces, warm organic textures and earthy tones create spaces that feel connected to the land. Every material choice reflects the raw beauty of nature, offering a sense of permanence and belonging.',
+    experience:
+      'Grounded, strong and warm. Built to last, made for life.',
+    features: [
+      'Solid materials & natural textures',
+      'Warm, earthy colour palette',
+      'Private, secure and rooted',
+      'Stability in every detail',
+    ],
+    material: 'Cuddapah / Tundum Stone',
+    materialDetail: 'Strong, grounded & enduring materials that wear beautifully with time.',
+    mood: 'Strong, grounded & enduring',
+    image: prithviImg,
+    imageAlt: 'PRITHVI home interior with natural stone and warm earthy textures',
+    heroAlt: 'PRITHVI residence rooted in the earth with natural stone and dark timber finishes',
+    video: prithviVideo,
+    gallery: [prithviImg, prithviGal1, prithviGal2, prithviGal3, prithviGal4, prithviGal5, prithviGal6, prithviGal7],
+    related: ['house-no-04'],
+  },
+  {
+    id: 'vanam',
+    number: '02',
+    name: 'VANAM',
+    element: 'Forest',
+    elementFull: 'Forest — Vegetation, Landscape',
+    tagline: 'In harmony with nature.',
+    description:
+      'Inspired by the lush canopy of a forest, VANAM homes celebrate greenery, freshness and the gentle play of natural light. Living spaces open into verdant views, blurring the boundaries between indoors and outdoors. Organic textures and verdant palettes create a sense of harmony with the surrounding landscape.',
+    experience:
+      'Green, lush and connected to nature. A home that grows with you.',
+    features: [
+      'Earthy textures and organic forms',
+      'Direct connection with greenery',
+      'Warm, grounding and nurturing',
+      'Indoor–outdoor living',
+    ],
+    material: 'Terracotta Tile',
+    materialDetail: 'Warm, earthy & organic materials that ground every space.',
+    mood: 'Warm, earthy & organic',
+    image: vanamImg,
+    imageAlt: 'VANAM home interior connected to lush vegetation and natural materials',
+    heroAlt: 'VANAM residence framed by lush vegetation and natural light',
+    video: vanamVideo,
+    gallery: [vanamImg, vanamGal1, vanamGal2, vanamGal3, vanamGal4, vanamGal5, vanamGal6],
+    related: ['verde-tower'],
+  },
+  {
+    id: 'surya',
+    number: '03',
+    name: 'SURYA',
+    element: 'Sun',
+    elementFull: 'Sun — Light, Shadow',
+    tagline: 'Warmth, light, vitality.',
+    description:
+      'Bathed in warmth and radiance, SURYA homes channel the golden energy of the sun. Natural timber, hand-finished brass and sun-kissed terracotta create interiors that glow with warmth. Thoughtfully positioned openings capture light throughout the day, filling every room with gentle luminance.',
+    experience:
+      'Bright, energetic and radiant. Filled with warmth and life.',
+    features: [
+      'Abundant sunlight & open views',
+      'Warm tones & natural finishes',
+      'Uplifting, vibrant & positive',
+      'Joyful spaces to gather',
+    ],
+    material: 'Sandstone / Terracotta',
+    materialDetail: 'Warm, radiant & vibrant materials that glow with natural light.',
+    mood: 'Warm, radiant & vibrant',
+    image: suryaImg,
+    imageAlt: 'SURYA home interior filled with warm directional sunlight',
+    heroAlt: 'SURYA residence filled with warm directional light and shadow',
+    video: suryaVideo,
+    gallery: [suryaImg, suryaGal1, suryaGal2, suryaGal3, suryaGal4, suryaGal5, suryaGal6],
+    related: ['solaris-pavilion'],
+  },
+  {
+    id: 'jala',
+    number: '04',
+    name: 'JALA',
+    element: 'Water',
+    elementFull: 'Water — Flow, Reflection',
+    tagline: 'Calmness in every curve.',
+    description:
+      'Reflecting the serenity and fluidity of water, JALA homes evoke calmness and purity. Smooth surfaces, reflective finishes and a gentle colour palette create an atmosphere of quiet elegance. Spaces flow seamlessly into one another, mirroring the natural movement of water through stillness and grace.',
+    experience:
+      'Calm, flowing and reflective spaces that bring peace and clarity.',
+    features: [
+      'Curved edges and soft transitions',
+      'Natural light and cross ventilation',
+      'Soothing palette inspired by water',
+      'Quiet corners and flowing views',
+    ],
+    material: 'Light Kota / Terrazzo',
+    materialDetail: 'Cool, calm & refreshing surfaces that mirror the stillness of water.',
+    mood: 'Cool, calm & refreshing',
+    image: jalaImg,
+    imageAlt: 'JALA home interior with calm water-inspired palette and natural light',
+    heroAlt: 'JALA residence with a reflecting pool and smooth natural surfaces',
+    video: jalaVideo,
+    gallery: [jalaImg, jalaGal1, jalaGal2, jalaGal3, jalaGal4, jalaGal5, jalaGal6],
+    related: ['jala-house'],
+  },
+  {
+    id: 'vayu',
+    number: '05',
+    name: 'VAYU',
+    element: 'Air',
+    elementFull: 'Air — Movement, Ventilation',
+    tagline: 'Openness that breathes.',
+    description:
+      'Embodying the lightness and movement of air, VAYU homes are designed for openness and breathability. Expansive windows, cross-ventilation pathways and airy floor plans create a constant dialogue with the outdoors. Every room feels connected to the breeze, offering a sense of freedom and effortless flow.',
+    experience:
+      'Light, breezy and dynamic. Spaces that breathe.',
+    features: [
+      'Cross ventilation & perforated screens',
+      'Light fabrics and soft movement',
+      'Cool tones and airy ambience',
+      'Energy that flows freely',
+    ],
+    material: 'Light Grey Kota / Terrazzo',
+    materialDetail: 'Cool, light & breezy materials that keep the air moving.',
+    mood: 'Cool, light & breezy',
+    image: vayuImg,
+    imageAlt: 'VAYU home interior with open layers and natural cross-ventilation',
+    heroAlt: 'VAYU residence with open layers and natural cross-ventilation',
+    video: vayuVideo,
+    gallery: [vayuImg, vayuGal1, vayuGal2, vayuGal3, vayuGal4, vayuGal5, vayuGal6],
+    related: ['vayu-heights'],
+  },
+  {
+    id: 'akash',
+    number: '06',
+    name: 'AKASH',
+    element: 'Space',
+    elementFull: 'Space — Void, Sky',
+    tagline: 'Limitless living.',
+    description:
+      'Inspired by the vast expanse of the sky, AKASH homes celebrate openness and expansiveness. Soaring ceilings, generous proportions and an abundance of natural light create spaces that feel boundless. The design fosters a profound sense of freedom, where architecture becomes a canvas for limitless living.',
+    experience:
+      'Open, expansive and infinite. Made for freedom & flow.',
+    features: [
+      'Double height & skylight options',
+      'Minimal walls, maximum space',
+      'Light, open and tranquil',
+      'A sense of space and stillness',
+    ],
+    material: 'Microcement / Ivory Terrazzo',
+    materialDetail: 'Seamless, minimal & timeless surfaces that never interrupt the volume.',
+    mood: 'Seamless, minimal & timeless',
+    image: akashImg,
+    imageAlt: 'AKASH home interior with soaring volume and expansive natural light',
+    heroAlt: 'AKASH residence with soaring ceilings and expansive light-filled interiors',
+    video: akashVideo,
+    gallery: [akashImg, akashGal1, akashGal2, akashGal3, akashGal4, akashGal5, akashGal6],
+    related: ['akash-studios'],
+  },
 ];

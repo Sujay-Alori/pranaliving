@@ -115,7 +115,9 @@ function Body({ links, selectedLink, setSelectedLink, onNavigate, closeMenu }) {
   function handleNavigate(e, link) {
     e.preventDefault();
     closeMenu();
-    if (link.route === 'category') {
+    if (link.route === 'homes') {
+      onNavigate('homes');
+    } else if (link.route === 'category') {
       onNavigate('category', link.id);
     } else if (link.route === 'floorPlans') {
       onNavigate('floorPlans');
@@ -170,6 +172,14 @@ function Preview({ src, isActive }) {
 function Footer() {
   return (
     <div className="header-nav-footer">
+      <ul>
+        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
+          Privacy Policy
+        </motion.li>
+        <motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
+          Terms &amp; Conditions
+        </motion.li>
+      </ul>
     </div>
   );
 }

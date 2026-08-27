@@ -32,7 +32,9 @@ export default function Footer({ onNavigate }) {
 
   function handleNav(e, link) {
     e.preventDefault();
-    if (link.route === 'category') {
+    if (link.route === 'homes') {
+      onNavigate('homes');
+    } else if (link.route === 'category') {
       onNavigate('category', link.id);
     } else if (link.route === 'floorPlans') {
       onNavigate('floorPlans');
@@ -108,7 +110,7 @@ export default function Footer({ onNavigate }) {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            &copy; 2025 YOUR STUDIO{status ? <>&nbsp;&nbsp;|&nbsp;&nbsp;{status}</> : null}
+            &copy; 2025 BSVRP STUDIOS{status ? <>&nbsp;&nbsp;|&nbsp;&nbsp;{status}</> : null}
           </p>
 
           <div className="footer__legal">
