@@ -16,7 +16,7 @@ export default function Elements({ onNavigate }) {
       </div>
 
       <nav className="elements__quick reveal" ref={gridRef} aria-label="Quick access to elements">
-        <p className="elements__quick-label">Select an element to explore</p>
+        <p className="elements__quick-label">Select your home by experience</p>
         <div className="elements__quick-grid">
           {residences.map((residence) => (
             <button
@@ -25,9 +25,20 @@ export default function Elements({ onNavigate }) {
               onClick={() => onNavigate('category', residence.number)}
               aria-label={`${residence.number} ${residence.name} — ${residence.meaning}. View ${residence.name} media.`}
             >
-              <span className="elements__quick-number">{residence.number}</span>
-              <span className="elements__quick-name">{residence.name}</span>
-              <span className="elements__quick-meaning">{residence.meaning}</span>
+              <div className="elements__quick-image-wrap">
+                <img
+                  src={residence.image}
+                  alt={residence.imageAlt}
+                  className="elements__quick-image"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="elements__quick-info">
+                <span className="elements__quick-number">{residence.number}</span>
+                <span className="elements__quick-name">{residence.name}</span>
+                <span className="elements__quick-meaning">{residence.meaning}</span>
+              </div>
             </button>
           ))}
         </div>

@@ -641,22 +641,23 @@ ul {
 
 .elements__quick-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--color-border);
 }
 
 .elements__quick-item {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(0.15rem, 0.4vw, 0.3rem);
-  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(0.75rem, 1.5vw, 1.25rem);
   background: var(--color-cream);
   cursor: pointer;
-  text-align: center;
-  min-height: 80px;
+  text-align: left;
+  overflow: hidden;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  border: none;
   transition: background-color 0.4s var(--ease-out);
 }
 
@@ -668,6 +669,32 @@ ul {
   outline: 2px solid var(--color-charcoal);
   outline-offset: -2px;
   z-index: 1;
+}
+
+.elements__quick-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-sand);
+}
+
+.elements__quick-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s var(--ease-out);
+}
+
+.elements__quick-item:hover .elements__quick-image {
+  transform: scale(1.03);
+}
+
+.elements__quick-info {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.1rem, 0.3vw, 0.2rem);
+  padding: clamp(0.75rem, 1.5vw, 1.25rem) clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 .elements__quick-number {
@@ -4581,7 +4608,8 @@ ul {
 
   .element:hover .element__image,
   .floor-plan-card:hover .floor-plan-card__image,
-  .home-tile:hover .home-tile__image {
+  .home-tile:hover .home-tile__image,
+  .elements__quick-item:hover .elements__quick-image {
     transform: none;
   }
 
