@@ -74,7 +74,7 @@ export default function App() {
   return (
     <>
       <Header onNavigate={navigate} currentRoute={route} />
-      <main>
+      <main id="main-content">
         {route.page === 'home' && <Home onNavigate={navigate} />}
         {route.page === 'homes' && <HomesGridPage onNavigate={navigate} />}
         {route.page === 'flats' && <FlatsOverviewPage onNavigate={navigate} />}

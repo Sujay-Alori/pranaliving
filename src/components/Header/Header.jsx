@@ -27,6 +27,9 @@ export default function Header({ onNavigate }) {
 
   return (
     <div className="site-header">
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <div className="header-bar">
         <a
           href="#"

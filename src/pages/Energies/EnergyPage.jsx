@@ -55,6 +55,13 @@ export default function EnergyPage({ energyId, onNavigate }) {
           <div className="energy-hero__overlay" />
         </div>
         <div className="energy-hero__content">
+          <button
+            className="energy-hero__back"
+            onClick={() => onNavigate('home')}
+            aria-label="Back to home"
+          >
+            &larr; HOME
+          </button>
           <span className="energy-hero__number">{energy.number}</span>
           <h1 className="energy-hero__title">{energy.name}</h1>
           <p className="energy-hero__meaning">{energy.meaning}</p>
