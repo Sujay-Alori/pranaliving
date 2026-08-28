@@ -15,6 +15,12 @@ iframe {
   height: auto;
 }
 
+/* Safe area support for modern phones with notches */
+.site-header {
+  padding-top: env(safe-area-inset-top, 10px);
+  padding-inline: clamp(12px, 4vw, 20px);
+}
+
 /* Fix header nav for mobile */
 .header-nav__wrapper {
   flex-direction: column;
@@ -92,20 +98,39 @@ iframe {
 /* Concept mobile */
 .concept {
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem);
+  overflow: hidden;
 }
 
 .concept__grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .concept__item {
-  border-right: none !important;
+  border-right: 1px solid var(--color-sand);
   border-bottom: 1px solid var(--color-sand);
   min-height: 48px;
+  padding: clamp(1rem, 3vw, 1.5rem) clamp(0.5rem, 2vw, 1rem);
 }
 
-.concept__item:last-child {
-  border-bottom: none;
+.concept__item:nth-child(3n) {
+  border-right: none;
+}
+
+.concept__item:nth-child(n+4) {
+  border-top: none;
+}
+
+.concept__name {
+  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+  letter-spacing: 0.06em;
+}
+
+.concept__number {
+  font-size: clamp(0.5rem, 1.8vw, 0.5625rem);
+}
+
+.concept__meaning {
+  font-size: clamp(0.5625rem, 1.6vw, 0.75rem);
 }
 
 .concept__title {
@@ -116,6 +141,7 @@ iframe {
 .elements {
   padding-top: clamp(3rem, 8vw, 5rem);
   padding-bottom: clamp(2rem, 6vw, 4rem);
+  overflow: hidden;
 }
 
 .elements__header {
@@ -129,11 +155,13 @@ iframe {
 .element {
   padding: 0 clamp(1rem, 4vw, 2rem);
   margin-bottom: clamp(2rem, 5vw, 3rem);
+  overflow: hidden;
 }
 
 .element__image {
   aspect-ratio: 16 / 10;
   height: auto;
+  width: 100%;
 }
 
 .element:not(.element--reverse) .element__media {
@@ -166,6 +194,7 @@ iframe {
 
 .element__description {
   max-width: 100%;
+  width: 100%;
 }
 
 /* Floor Plans mobile */
@@ -180,10 +209,12 @@ iframe {
 /* Closing / CTA mobile */
 .closing {
   min-height: 60vh;
+  overflow: hidden;
 }
 
 .closing__content {
   padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem);
+  max-width: 100%;
 }
 
 .closing__title {
@@ -206,6 +237,7 @@ iframe {
 /* Enquiry form mobile */
 .enquiry {
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem);
+  overflow: hidden;
 }
 
 .enquiry__title {
@@ -215,6 +247,24 @@ iframe {
 .enquiry-form__submit {
   width: 100%;
   min-height: 48px;
+}
+
+/* Flats Overview mobile */
+.flats-overview {
+  padding-top: clamp(4rem, 10vw, 6rem);
+  padding-bottom: clamp(3rem, 6vw, 4rem);
+}
+
+.flats-overview__grid {
+  grid-template-columns: 1fr;
+}
+
+.flats-card {
+  border-right: none !important;
+}
+
+.flats-card__description {
+  -webkit-line-clamp: 2;
 }
 
 /* Footer mobile */
@@ -727,6 +777,19 @@ iframe {
 .category__description {
   max-width: 100%;
   font-size: clamp(0.75rem, 2.5vw, 1rem);
+}
+
+/* Category nav mobile */
+.category__nav {
+  flex-direction: column;
+  padding: clamp(1.5rem, 4vw, 2rem) clamp(1rem, 4vw, 2rem);
+}
+
+.category__nav-btn--next {
+  text-align: left;
+  border-top: 1px solid var(--color-border);
+  padding-top: clamp(1rem, 3vw, 1.5rem);
+  margin-top: clamp(0.5rem, 1vw, 0.75rem);
 }
 
 .category__others {

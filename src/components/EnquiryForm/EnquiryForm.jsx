@@ -33,7 +33,7 @@ export default function EnquiryForm() {
         return;
       }
       const message = `Name: ${values.name}%0AEmail: ${values.email}%0APhone: ${values.phone}%0AMessage: ${values.message}`;
-      window.open(`https://wa.me/917892675392?text=${message}`, '_blank');
+      window.open(`https://wa.me/919686367940?text=${message}`, '_blank');
       setSubmitted(true);
     },
     [values]

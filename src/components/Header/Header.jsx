@@ -119,6 +119,8 @@ function Body({ links, selectedLink, setSelectedLink, onNavigate, closeMenu }) {
       window.open(link.href, '_blank', 'noopener,noreferrer');
     } else if (link.route === 'homes') {
       onNavigate('homes');
+    } else if (link.route === 'flats') {
+      onNavigate('flats');
     } else if (link.route === 'category') {
       onNavigate('category', link.id);
     } else {

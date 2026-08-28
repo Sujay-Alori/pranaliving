@@ -6,6 +6,7 @@ import ProjectsPage from './pages/Projects/ProjectsPage';
 import ProjectDetail from './pages/Projects/ProjectDetail';
 import EnergyPage from './pages/Energies/EnergyPage';
 import CategoryPage from './pages/Category/CategoryPage';
+import FlatsOverviewPage from './pages/Category/FlatsOverviewPage';
 import FloorPlansPage from './pages/FloorPlans/FloorPlansPage';
 import HomesGridPage from './pages/Homes/HomesGridPage';
 import HomeDetailPage from './pages/Homes/HomeDetailPage';
@@ -16,6 +17,7 @@ function getRoute() {
     return { page: 'homeDetail', id: hash.replace('home/', '') };
   }
   if (hash === 'homes') return { page: 'homes' };
+  if (hash === 'flats') return { page: 'flats' };
   if (hash.startsWith('energy/')) {
     return { page: 'energy', id: hash.replace('energy/', '') };
   }
@@ -42,7 +44,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (route.page === 'category' || route.page === 'home' || route.page === 'floorPlans' || route.page === 'homes') {
+    if (route.page === 'category' || route.page === 'home' || route.page === 'floorPlans' || route.page === 'homes' || route.page === 'flats') {
       window.scrollTo({ top: 0, behavior: 'auto' });
     }
   }, [route]);
@@ -52,6 +54,8 @@ export default function App() {
       window.location.hash = `home/${id}`;
     } else if (page === 'homes') {
       window.location.hash = 'homes';
+    } else if (page === 'flats') {
+      window.location.hash = 'flats';
     } else if (page === 'energy') {
       window.location.hash = `energy/${id}`;
     } else if (page === 'project') {
@@ -73,6 +77,7 @@ export default function App() {
       <main>
         {route.page === 'home' && <Home onNavigate={navigate} />}
         {route.page === 'homes' && <HomesGridPage onNavigate={navigate} />}
+        {route.page === 'flats' && <FlatsOverviewPage onNavigate={navigate} />}
         {route.page === 'homeDetail' && (
           <HomeDetailPage homeId={route.id} onNavigate={navigate} />
         )}

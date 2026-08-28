@@ -3,7 +3,7 @@ import heroImg from '../../assets/images/Hero.png';
 
 const footerNav = [
   { label: 'Home', href: '#home', route: 'home' },
-  { label: 'Flats', href: '#explore', route: 'category', id: '01' },
+  { label: 'Flats', href: '#flats', route: 'flats' },
   { label: 'Map', href: 'https://maps.app.goo.gl/ozwghKTXLcznH4x19?g_st=iw', external: true },
   { label: 'Contact', href: '#enquire', route: 'home', anchor: 'enquire' },
 ];
@@ -36,6 +36,8 @@ export default function Footer({ onNavigate }) {
       window.open(link.href, '_blank', 'noopener,noreferrer');
     } else if (link.route === 'homes') {
       onNavigate('homes');
+    } else if (link.route === 'flats') {
+      onNavigate('flats');
     } else if (link.route === 'category') {
       onNavigate('category', link.id);
     } else {
@@ -87,20 +89,18 @@ export default function Footer({ onNavigate }) {
             <div className="footer__info-block">
               <span className="footer__label">(ACKNOWLEDGEMENT)</span>
               <p className="footer__info-text">
-                We respectfully acknowledge the Turrbal people, the Traditional
-                Owners and Custodians of the Country on which we work. We pay our
-                respects to Elders past and present, and acknowledge their
-                continuing connection to land, sea and community.
+                We acknowledge the Turrbal and Jagera peoples as the Traditional
+                Custodians of the lands on which we live and work. We pay our
+                respects to Elders past, present and emerging, and recognise
+                their enduring connection to land, waters and community.
               </p>
             </div>
 
             <div className="footer__info-block">
-              <span className="footer__label">(INFO)</span>
+              <span className="footer__label">(CALL US)</span>
               <address className="footer__address">
-                <span className="footer__address-line">A: 101 Days Rd, Grange QLD 4051</span>
-                <span className="footer__address-line">E: info@yourstudio.com.au</span>
-                <span className="footer__address-line">P: 07 3110 1031</span>
-                <span className="footer__address-line">H: Monday to Friday, 8:30am &ndash; 5:00pm</span>
+                <a href="tel:+917892675392" className="footer__address-line">P: +91 78926 75392</a>
+                <a href="tel:+919686367940" className="footer__address-line">P: +91 96863 67940</a>
               </address>
             </div>
           </div>

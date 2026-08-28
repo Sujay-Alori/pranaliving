@@ -9,7 +9,7 @@ export default function Concept({ onNavigate }) {
     <section className="concept" id="concept">
       <div className="concept__inner">
         <div className="concept__header reveal" ref={headerRef}>
-          <h2 className="concept__title">with nature.</h2>
+          <h2 className="concept__title">six elements</h2>
           <p className="concept__description">
             PRANA Residences is inspired by six fundamental energies of nature.
             Each home is designed with a unique identity while creating a
