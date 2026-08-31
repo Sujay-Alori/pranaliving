@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { navLinks } from '../../data/residences';
 import { transition, opacity, height, background, blur, translate } from './anim';
+import logo from '../../assets/images/logo/PRANA_LIVING LOGO (2).png';
 
 export default function Header({ onNavigate }) {
   const [isActive, setIsActive] = useState(false);
@@ -37,8 +38,7 @@ export default function Header({ onNavigate }) {
           aria-label="PRANA Residences home"
           onClick={(e) => { e.preventDefault(); closeMenu(); onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
         >
-          <span className="header-logo__name">PRANA</span>
-          <span className="header-logo__tagline">Residences</span>
+          <img src={logo} alt="PRANA Residences" className="header-logo__img" />
         </a>
 
         <div

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { hero } from '../../data/residences';
+import logo from '../../assets/images/logo/PRANA_LIVING LOGO (2).png';
+import sanskrutiLogo from '../../assets/images/logo/Sanskruti Design Studio.png';
 
 export default function Hero({ onNavigate }) {
   const [loaded, setLoaded] = useState(false);
@@ -27,14 +29,15 @@ export default function Hero({ onNavigate }) {
         <div className="hero__overlay" />
       </div>
       <div className="hero__content">
-        <h1 className="hero__title">
-          <span className="hero__title-main">PRANA</span>
-          <span className="hero__title-sub">Residences</span>
-        </h1>
-        <p className="hero__tagline">HOMES THAT BREATHE WITH NATURE</p>
+        <img src={logo} alt="PRANA Residences" className="hero__logo" />
         <a href="#category/01" className="hero__cta" onClick={handleExplore}>
           EXPLORE THE RESIDENCES
         </a>
+        <div className="hero__credit">
+          <p className="hero__credit-label">Designed by</p>
+          <p className="hero__credit-name">Ar.Sandeep Kumar P</p>
+          <img src={sanskrutiLogo} alt="SANSKRUTI DESIGN STUDIO" className="hero__credit-logo" />
+        </div>
       </div>
     </section>
   );
