@@ -79,15 +79,14 @@ iframe {
 }
 
 .hero__content {
-  padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
-  padding-bottom: 0.25rem;
+  padding: 10vh clamp(1rem, 4vw, 2rem) 0.25rem;
   max-width: 100%;
 }
 
 .hero__logo {
-  width: clamp(16rem, 60vw, 26rem);
-  max-width: 100%;
-  margin-bottom: 0.25rem;
+  width: clamp(11rem, 50vw, 21rem);
+  max-width: 90%;
+  margin-bottom: 0;
 }
 
 .hero__cta {
